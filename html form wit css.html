@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .form-container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.2);
+      width: 400px;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #444;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    input[type="file"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    .form-group-inline {
+      margin-bottom: 15px;
+    }
+
+    .form-group-inline input {
+      margin-right: 5px;
+    }
+
+    .btn-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      width: 48%;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    input[type="submit"] {
+      background-color: #28a745;
+      color: white;
+    }
+
+    input[type="reset"] {
+      background-color: #dc3545;
+      color: white;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #218838;
+    }
+
+    input[type="reset"]:hover {
+      background-color: #c82333;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Registration Form</h2>
+    <form>
+      <!-- Full Name -->
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name">
+
+      <!-- Email -->
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email">
+
+      <!-- Password -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password">
+
+      <!-- Confirm Password -->
+      <label for="confirm">Confirm Password:</label>
+      <input type="password" id="confirm" name="confirm">
+
+      <!-- Date of Birth -->
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob">
+
+      <!-- Photo -->
+      <label for="photo">Upload Photo:</label>
+      <input type="file" id="photo" name="photo">
+
+      <!-- Gender -->
+      <div class="form-group-inline">
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="others"> Others
+      </div>
+
+      <!-- Religion -->
+      <div class="form-group-inline">
+        <label>Religion:</label>
+        <input type="checkbox" name="religion" value="islam"> Islam
+        <input type="checkbox" name="religion" value="hindu"> Hindu
+        <input type="checkbox" name="religion" value="buddho"> Buddho
+        <input type="checkbox" name="religion" value="christian"> Christian
+      </div>
+
+      <!-- Department -->
+      <label for="department">Department:</label>
+      <select id="department" name="department">
+        <option value="cis">CIS</option>
+        <option value="cse">CSE</option>
+        <option value="bba">BBA</option>
+        <option value="mba">MBA</option>
+        <option value="law">LAW</option>
+        <option value="textile">TEXTILE</option>
+        <option value="english">ENGLISH</option>
+      </select>
+
+      <!-- Comment -->
+      <label for="message">Comment:</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <!-- Buttons -->
+      <div class="btn-container">
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
