@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+    <head>
+        <tytle> HTML FORM PROJECT</tytle>
+    </head>
+    <body>
+        <form action="/action_page.php" autocomplete="on" method="get">
+       <label for=":fname">FIRST NAME: </label>
+       <input type="text" id="fname" name="firstname" placeholder="Your name.." required><br><br>
+         <label for=":lname">LAST NAME: </label>
+         <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br><br>
+            <label for=":country">COUNTRY: </label>
+            <select id="country" name="country">
+                <option value="bangladesh"selected>BANGLADESH</option>
+                <option value="india">INDIA</option>
+                <option value="pakistan">PAKISTAN</option>
+                <option value="srilanka">SRILANKA</option>
+                <option value="nepal">NEPAL</option>
+            </select><br><br>
+            <label for=":university">UNIVERSITYNAME: </label>
+            <select id="university" name="university">
+                <option value="diu"selected>DIU</option>
+                <option value="nsu">NSU</option>
+                <option value="brac">BRAC</option>
+                <option value="aust">AUST</option>
+                <option value="iubat">IUBAT</option>    
+            </select><br><br>
+
+            <label for=":subject">SUBJECT: </label><br>
+            <select id="subject" name="subject" size="4" multiple>
+                <option value="cse"selected>CIS</option>
+                <option value="eee">EEE</option>
+                <option value="bba">CSE</option>
+                <option value="llb">LLB</option>
+                <option value="mba">MBA</option>
+            </select><br><br>
+            <label for ="email ">EMAIL: </label>
+            <input type="email" id="email" name="email" placeholder="Your email.." required><br><br>
+            <label for=":phone">PHONE: </label>
+            <input type="tel" id="phone" name="phone" placeholder="Your phone number.."><br><br>
+            <label for ="dob">DATE OF BIRTH</label>
+            <input type="date" id="dob" name="dob"><br><br>
+            <LABEL for="birthplae">BIRTHPLACE: </LABEL>
+            <input type="text" id="birthplace" name="birthplace" placeholder="Your birthplace.."><br><br>
+            <label for ="fcolor" >favourite color: </label>
+                <datalist id="fcolor">
+                    <option value="red">
+                    <option value="blue">
+                    <option value="green">
+                    <option value="yellow">
+                    <option value="black">
+                    <option value="white">  
+                </datalist>
+                <input list="fcolor" name="fcolor" id="fcolor" placeholder="Your favourite color.."><br><br>
+                <label for="religion">RELIGION: </label><br>
+                <input type="radio" id="islam" name="religion" value="islam" checked>islam
+                <input type="radio" id="hinduism" name="religion" value="hinduism">hinduism
+                <input type="radio" id="buddhism" name="religion" value="buddhism">buhism
+                <input type="radio" id="christianity" name="religion" value="christianity">christianity
+                <inpot type="radio" id="others" name="religion" value="others">others<br>
+                <label for="hobby">HOBBY: </label><br>      
+                <input type="checkbox" id="reading" name="hobby" value="reading" checked>reading
+                <input type="checkbox" id="traveling" name="hobby" value="sexing">sexing
+                <input type="checkbox" id="swimming" name="hobby" value="swimming">swimming
+                <input type="checkbox" id="fishing" name="hobby" value="fishing">fishing
+                <input type="checkbox" id="others" name="hobby" value="others"><br><br>
+                <label for="photo">PHOTO: </label>
+                <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+                <label for="aboutyou">ABOUT YOU: </label><br>   
+                <textarea id="aboutyou" name="aboutyou" placeholder="Write something about you.." style="height:100px; width:300px"></textarea><br><br>
+                <input type="submit" value="Submit">    
+                <input type="reset" value="Reset">
+        </form> 
+             </body>
+</html>
