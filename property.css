@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Position Property</title>
+  <style>
+    h1 {
+      position: relative;
+      left: 20px; /* moved left */
+    }
+    h2 {
+      position: relative;
+      right: -20px; /* moved right */
+    }
+  </style>
+</head>
+<body>
+
+<h3>The position Property</h3>
+
+<h1>This heading is moved left according to its normal position</h1>
+<h2>This heading is moved right according to its normal position</h2>
+
+</body>
+</html>
