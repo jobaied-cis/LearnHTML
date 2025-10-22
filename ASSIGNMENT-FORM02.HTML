@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>HTML Form</title>
+    </head>
+    <body>
+        
+        <h2>Basic html Form</h2>
+        <fieldset>
+            <legend>Name</legend>
+            <form>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" ><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Others Qurestions</legend>
+            <label for="drink">Choose a drink</label><br>
+            <input type="radio" id="tea" name="drink" value="tea">Tea<br>
+            <input type="radio" id="coffee" name="drink" value="coffee">Coffee<br>
+            <input type="radio" id="juice" name="drink" value="juice">Juice<br><br>
+            <label for="ice cream">Wht ice cream do you like?</label><br>
+            <input type="checkbox" id="vanilla" name="ice cream" value="vanilla">Vanilla<br>
+            <input type="checkbox" id="chocolate" name="ice cream" value="chocolate">Chocolate<br>
+            <input type="checkbox" id="strawberry" name="ice cream" value   ="strawberry">Strawberry<br>
+            <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">Subscribe to newsletter<br>
+            <input type="checkbox" id="drink" name="drink" value="vanailla">vanailla<br><br>
+            <label for="school">Select a school:</label><br>
+            <select id="school" name="school">
+                <option value="DAFFODIL SCHOOL AND COLLAGE">DAFFODIL SCHOOL AND COLLAGE</option>
+                <option value="united school">united school</option>
+                <option value="daffodil school">daffodil school</option>
+            </select><br><br>
+            <label for="comments">Please provide comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        </fieldset><br>
+        <input type="submit" value="Submit">
+        </form>

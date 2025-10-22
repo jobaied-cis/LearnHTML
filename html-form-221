@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Html form</title>
+    </head>
+    <body>
+        <h2>Basic html form</h2>
+        <form>
+            <fieldset>
+                <legend>Name</legend>
+                <label for="fname">First name:</label><br>
+                <input type="text"id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br><br> 
+            </fieldset>
+            <fieldset>
+                <legend>Others Questions</legend>
+                <label for="drink">Choose a drink:</label><br>
+                <input type="radio" id="coffee" name="drink" value="coffee">coffee<br>
+                <input type="radio" id="tea" name="drink" value="tea">tea<br>
+                <input type="radio" id="milk" name="drink" value="milk">milk<br><br>
+                <label for="ice cream">Choose a ice cream:</label><br>
+                <input type="checkbox" id="vanilla" name="ice cream" value="vanilla">vanilla<br>
+                <input type="checkbox" id="chocolate" name="ice cream" value="chocolate">chocolate<br>
+                <input type="checkbox" id="strawberry" name="ice cream" value="strawberry">strawberry<br><br>
+                <label for="school">select a school:</label><br>
+                <select name="school">
+                    <option value="chinair school">chinair school</option>
+                    <option value="springfield high">springfield high</option>
+                    <option value="sunnydale high">sunnydale high</option>  
+                    <option value="shermer high">shermer high</option>
+                </select><br>
+                <label for="comments">Comments:</label><br>
+                <textarea rows="4" cols="50" name="comments" form="usrform" placeholder="Enter text here..."></textarea><br><br>
+            </fieldset>
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>
